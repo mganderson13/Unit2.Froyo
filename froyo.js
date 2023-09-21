@@ -9,8 +9,10 @@ console.log(froyoArray);
 
 const froyoObject = {};
   for (const item of froyoArray) {
+//if the item is already in object, add one to count
     if (froyoObject[item]) {
         froyoObject[item]++;
+//if item is not in object, start count at 1
     } else {
         froyoObject[item] = 1;
     }
